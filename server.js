@@ -1,9 +1,10 @@
 const { notes } = require("./db/db.json");
 const express = require("express");
-//const router = require("express").Router();
+
 const app = express();
 const path = require("path");
 const fs = require("fs");
+const { nanoid } = require("nanoid");
 const PORT = 3001;
 
 //middleware
@@ -30,8 +31,8 @@ app.get("/notes", (req, res) => {
 });
 
 app.post("/api/notes", (req, res) => {
-  //sets note id
-  //req.body.id = notes.length.toString();
+  //sets random note id
+  req.body.id = nanoid();
   const note = createNewNote(req.body, notes);
   res.send(notes);
 });
