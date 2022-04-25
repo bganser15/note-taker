@@ -26,4 +26,5 @@ https://www.npmjs.com/package/nanoid
 
 ## Demo
 
-<video src='./demo/noteTakerWalkthrough.gif' width=180/>
+https://user-images.githubusercontent.com/95111100/165019058-d4626b57-41ac-4962-a1fd-ca28d858923d.mp4
+
